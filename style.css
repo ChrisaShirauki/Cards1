@@ -16,7 +16,7 @@ body{
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: linear-gradient(#596e5f, #77a684,#8bb396,#a6bfad, #bcd1c2);
+    background: linear-gradient(#595f58, #909792, #075c1e);
 }
 
 .card-list .card-item{
@@ -25,10 +25,17 @@ body{
 .card-list .card-item .web-link{
     width: 450px;
     display: block;   /* change block behaviour */
-    background: #bcd1c2;
+    background: #cadfd0;
     padding: 18px;
     border-radius:  12px;
+    border:2px solid transparent ;     /* pre-set the border to transparent for hover effect */
     text-decoration: none;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+    transition: 0.2s ease;
+}
+
+.card-list .card-item .web-link:hover {   /* making the hover border effect */ 
+    border-color:  #092e13;
 }
 
 .card-list .web-link .crd-image{
@@ -48,4 +55,14 @@ body{
    width: fit-content; /* make the background fit the text */
    border-radius: 50px;
 
+}
+
+.title{
+    font-size: 1.20rem;
+    color: black;
+    font-weight: 600;
+}
+
+button{
+    margin: 25px 0 5px;
 }
