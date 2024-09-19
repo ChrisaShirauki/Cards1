@@ -1,0 +1,51 @@
+
+/* Import Google fonts */ 
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Protest+Guerrilla&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Merriweather", sans-serif; 
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(#596e5f, #77a684,#8bb396,#a6bfad, #bcd1c2);
+}
+
+.card-list .card-item{
+    list-style: none;
+}
+.card-list .card-item .web-link{
+    width: 450px;
+    display: block;   /* change block behaviour */
+    background: #bcd1c2;
+    padding: 18px;
+    border-radius:  12px;
+    text-decoration: none;
+}
+
+.card-list .web-link .crd-image{
+    width: 100%;
+    aspect-ratio: 16 / 9;  /* width / height property */
+    object-fit: cover;   /* fit image into its container */
+    border-radius: 8px;
+}
+
+.link-desc{
+   color: azure;
+   background: #256135;
+   padding: 5px 15px;
+   font-size: 1rem;
+   font-weight: 500;
+   margin: 15px 0 17px;
+   width: fit-content; /* make the background fit the text */
+   border-radius: 50px;
+
+}
