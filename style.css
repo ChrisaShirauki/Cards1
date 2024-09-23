@@ -162,53 +162,7 @@ button{
     opacity: 1;
 }
 
-dialog{
-    box-sizing: border-box;
-    width: calc(100%-1rem);
-    max-width: 500px;
-    border: 1px solid #24361d;
-    border-radius: 5px;
-    text-align: center;
-    padding: 8px 15px 10px;
-}
-
-dialog h2{
-    margin-bottom: 5px;
-    color: #24660c;
-    font-weight: 500;
-}
-
-dialog p{
-    margin-bottom: 12px;
-    color:#000000;
-    padding: 0 2px;
-    font-size: 15px;
-    font-weight: 600;
-}
-
-dialog .controls{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 8px;
-    margin-bottom: 7px;
-}
-
-dialog .controls button{
-    padding: 8px;
-    cursor: pointer;
-    background: #03330f;
-    outline: none;
-    border-radius: 10px;
-    border: 1px solid #03330f;
-    font-weight: 600;
-    color: aliceblue;
-}
-
-dialog .controls button.cancel-btn{
-    background: transparent;
-    color: #03330f;
-
-}
+/* MODAL CSS STYLING */
 
 .msg-modal{
     width: 100%;
@@ -219,19 +173,62 @@ dialog .controls button.cancel-btn{
     display:flex; 
     justify-content: center;
     align-items: center;
-    z-index: 998;
+    z-index: 998; 
+    display: none; /* PUT MODAL OVER CARDS */
 }
 
 .modal-info{
  width: 600px;
- height: 400px;
+ height: 300px;
  background-color: white;
  opacity: 1;
  border-radius: 5px;
- 
+ text-align: center;
+ grid-template-columns: 1fr 1fr;
+ gap: 5px;
 
 }
 
+.modal-info .h2-modal{
+    margin-top: 15px;
+    color: #096622;
+    font-weight: 600;
+}
+
+.modal-info .p-modal{
+   margin-top: 10px;
+   color:#332e2e;
+   font-weight: 400;
+   padding: 0, 5px;
+   font-size: 14px;
+}
+
+.msg-modal .modal-info button{
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    background: #092e13;
+    border: 1px solid #092e13;
+    border-radius: 5px;
+    color: #cadfd0;
+    font-size: 15px;
+    padding: 10px;
+}
+
+.msg-modal .modal-info button.cancel-button{
+    background: transparent;
+    color: #092e13;
+}
+
+.msg-modal .modal-info button.ok-button:hover{
+    background-color: #595f58;
+    color: #cadfd0;
+}
+
+.msg-modal .modal-info button.cancel-button:hover{
+    background-color: #595f58;
+    color: #cadfd0;
+}
 /* Responsive Webiste */
 
 @media screen and (max-width: 770px) {
