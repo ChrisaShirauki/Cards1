@@ -12,6 +12,19 @@
     </head>
 
     <body>
+      <!-- Creation of Modal -->
+      <div class="msg-modal">
+        <div class="modal-info">
+          <h2 class="h2-modal">Before you leave:</h2>
+          <p class="p-modal">After pressing the "OK" button, you will be automatically transferred to the respective website.<br>
+             Are you sure you want to continue?</p>
+          <button class="cancel-button"> Cancel</button>
+          <button class="ok-button"> OK </button>
+        </div>
+      </div>
+
+      <!-- Creation of Cards-->
+
       <div class="card-container swiper">
         <div class="wrapper">
             <ul class="card-list swiper-wrapper">
@@ -21,10 +34,16 @@
                   <img src="gov.webp" alt="Forest Suspension-Ktimat" class="crd-image">
                   <p class="link-desc">Forest Suspension</p>
                   <h2 class="title">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Navigate to :
+                    https://gis.ktimanet.gr <br> /gis/forestsuspension 
                   </h2>
-                  <button type="button" class="btn btn-success"> Proceed </button> 
                 </a>
+                <div class="content">
+                <h2 class="hover-title"> Information:</h2>
+                <p class="hover-info"> This website describes the forest suspension in Greece. <br>
+                  To procced in this website press the button below.</p>
+                <button type="button" id="modal"  class="hover btn btn-success"> Proceed To Website</button> 
+                </div>
                </li>
                  <!--2nd card-->
                <li class="card-item swiper-slide">
@@ -32,10 +51,17 @@
                  <img src="ktimat.png" alt="Ktimatologio" class="crd-image">
                  <p class="link-desc">Cadastre</p>
                  <h2 class="title">
-                     Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                   Navigate to: <br>
+                   https://www.ktimatologio.gr/
                  </h2>
-                 <button type="button" class="btn btn-success"> Proceed </button> 
                </a>
+               <div class="content">
+                <h2 class="hover-title"> Information: </h2>
+                <p class="hover-info"> Cadestre is the general record of real property. <br>
+                  It includes the geometric description and the ownership status of each parcel of land. <br>
+                  To procced in this website press the button below.</p>
+                <button type="button" class="hover btn btn-success"> Proceed To Website</button> 
+                </div>
               </li>
                <!--3rd card-->
                <li class="card-item swiper-slide">
@@ -43,10 +69,16 @@
                  <img src="ktimagr.png" alt="ktimagr" class="crd-image">
                  <p class="link-desc">Ktima.gr</p>
                  <h2 class="title">
-                     Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  Navigate to: <br>
+                  https://www.ktimatologio.gr/
                  </h2>
-                 <button type="button" class="btn btn-success"> Proceed </button> 
                </a>
+               <div class="content">
+                <h2 class="hover-title"> Information:</h2>
+                <p class="hover-info"> This is the original site for land registration. <br>
+                  To proceed in this website press the button below.</p>
+                <button type="button" class="hover btn btn-success"> Proceed To Website </button> 
+                </div>
               </li>
               <!--4rth card-->
               <li class="card-item swiper-slide">
@@ -54,10 +86,17 @@
                  <img src="geoanalysis.png" alt="geonalysis-map" class="crd-image">
                  <p class="link-desc geoanalysis">Geoanalysis</p>
                  <h2 class="title">
-                     Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  Navigate to: <br>
+                  https://gis.kthma.com/
                  </h2>
-                 <button type="button" class="btn btn-success"> Proceed </button> 
                </a>
+               <div class="content">
+                <h2 class="hover-title"> Information:</h2>
+                <p class="hover-info"> Geoanalysis is one of the dynamic companies in the field of infrastructure project studies, <br>
+                   with the main characteristic  being investments in pioneering technological sectors and the <br>
+                   use of exclusively high technology. To proceed in this website press the button below.</p>
+                <button type="button" class="hover btn btn-success"> Proceed To Website</button> 
+                </div>
               </li>
               <!--5th card-->
               <li class="card-item swiper-slide">
@@ -65,10 +104,16 @@
                  <img src="delos.jpg" alt="delos-tour" class="crd-image">
                  <p class="link-desc tour">Delos Tour</p>
                  <h2 class="title">
-                     Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  Navigate to: <br>
+                  https://apsim.geoanalysis.gr/delos/
                  </h2>
-                 <button type="button" class="btn btn-success"> Proceed </button> 
                </a>
+               <div class="content">
+                <h2 class="hover-title"> Information:</h2>
+                <p class="hover-info"> Get in touch with ancient Greek history. <br>
+                  Take a look of Delos ancient tomb.To proceed in this website press the button below.</p>
+                <button type="button" class="hover btn btn-success"> Proceed To Website </button> 
+                </div>
               </li>
               <!--6th card-->
               <li class="card-item swiper-slide">
@@ -76,10 +121,16 @@
                  <img src="dion.jpg" alt="dion-tour" class="crd-image">
                  <p class="link-desc tour">Dion Tour</p>
                  <h2 class="title">
-                     Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  Navigate to: <br>
+                  https://apsim.geoanalysis.gr/dion/
                  </h2>
-                 <button type="button" class="btn btn-success"> Proceed </button> 
                </a>
+               <div class="content">
+                <h2 class="hover-title"> Information:</h2>
+                <p class="hover-info"> Get in touch with ancient Greek history. <br>
+                  Take a look of ancient Dion.To proceed in this website press the button below.</p>
+                <button type="button" class="hover btn btn-success"> Proceed To Website</button> 
+                </div>
               </li>
               <!--7th card-->
               <li class="card-item swiper-slide">
@@ -87,10 +138,16 @@
                  <img src="gobim.png" alt="geoanalysis-gobim" class="crd-image">
                  <p class="link-desc go">Geoanalysis- 3D BIM</p>
                  <h2 class="title">
-                     Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  Navigate to: <br>
+                  https://gobim.geoanalysis.gr/
                  </h2>
-                 <button type="button" class="btn btn-success"> Proceed </button> 
                </a>
+               <div class="content">
+                <h2 class="hover-title"> Information:</h2>
+                <p class="hover-info"> Get in touch with Geonalysis simulators and new technologies. <br>
+                  To proceed in this website press the button below.</p>
+                <button type="button" class="hover btn btn-success"> Proceed To Website </button> 
+                </div>
               </li>
               <!--8th card-->
               <li class="card-item swiper-slide">
@@ -98,10 +155,16 @@
                  <img src="andros.jpg" alt="geonalysis-andros-simulator" class="crd-image">
                  <p class="link-desc simulator">Andros Simulator</p>
                  <h2 class="title">
-                     Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  Navigate to: https://3d.geoanalysis.gr <br>
+                  /pointcloud/area/open/gv_andros/
                  </h2>
-                 <button type="button" class="btn btn-success"> Proceed </button> 
                </a>
+               <div class="content">
+                <h2 class="hover-title"> Information:</h2>
+                <p class="hover-info"> Simulaor of Andros. It is the northernmost island of the Cyclades and the second largest <br>
+                  in area, after Naxos.To proceed in this website press the button below.</p>
+                <button type="button" class="hover btn btn-success"> Proceed To Website</button> 
+                </div>
               </li>
                <!--9th card-->
                <li class="card-item swiper-slide">
@@ -109,10 +172,17 @@
                  <img src="lar_theater.jpg" alt="geonalysis-theater-simulator" class="crd-image">
                  <p class="link-desc simulator">Larissa Theater Simulator</p>
                  <h2 class="title">
-                     Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  Navigate to: https://3d.geoanalysis.gr<br>
+                  /pointcloud/area/open/gv_theater/
                  </h2>
-                 <button type="button" class="btn btn-success"> Proceed </button> 
                </a>
+               <div class="content">
+                <h2 class="hover-title"> Information:</h2>
+                <p class="hover-info"> This theater was built in first half of 3rd century B.C <br>
+                  on southern slopes of "Fortress" hill.It worked until the end of the 3rd century or the beginning of <br>
+                  the 4th century AD, when it was destroyed by a big earthquake.To proceed in this website press the button below.</p>
+                <button type="button" class="hover btn btn-success"> Proceed To Website</button> 
+                </div>
               </li>
                <!--10th card-->
                <li class="card-item swiper-slide">
@@ -120,10 +190,16 @@
                  <img src="paralia-nikis.jpg" alt="geonalysis-niki-simulator" class="crd-image">
                  <p class="link-desc simulator">Thessaloniki Port Simulator</p>
                  <h2 class="title">
-                     Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  Navigate to: https://3d.geoanalysis.gr <br>
+                  /pointcloud/area/open/pcd_nikis/
                  </h2>
-                 <button type="button" class="btn btn-success"> Proceed </button> 
                </a>
+               <div class="content">
+                <h2 class="hover-title"> Information:</h2>
+                <p class="hover-info"> Enjoy a 3D analysis of Thessaloniki port.<br> 
+                To proceed in this website press the button below.</p>
+                <button type="button" class="hover btn btn-success"> Proceed To Website</button> 
+                </div>
               </li>
                <!--11th card-->
                <li class="card-item swiper-slide">
@@ -131,10 +207,18 @@
                  <img src="dilos_2.jpg" alt="geonalysis-ancient-dilos-simulator" class="crd-image">
                  <p class="link-desc simulator">Ancient Delos Simulator</p>
                  <h2 class="title">
-                     Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  Navigate to: https://3d.geoanalysis.gr <br>
+                  /pointcloud/area/open/gv_dilos/
                  </h2>
-                 <button type="button" class="btn btn-success"> Proceed </button> 
                </a>
+               <div class="content">
+                <h2 class="hover-title"> Information:</h2>
+                <p class="hover-info"> In 1990, UNESCO added Delos to the World Heritage List, citing its exceptional archaeological site which <br>
+                  "conveys the image of a great cosmopolitan Mediterranean port", <br>
+                  its influence on the development of Greek architecture, and its sacred importance throughout Ancient Greece.<br> 
+                  To proceed in this website press the button below.</p>
+                <button type="button" class="hover btn btn-success"> Proceed To Website</button> 
+                </div>
               </li>
             </ul>
             <div class="swiper-pagination"></div>
@@ -142,6 +226,8 @@
             <div class="swiper-slide-btn swiper-button-next"></div>
         </div>
       </div>
+
+     
       <!-- Link for the swiper effect and script-->
       <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> 
       <script src="script.js"></script>

@@ -1,3 +1,12 @@
+//MODAL SCRIPT
+
+
+
+
+
+
+//SWIPER JAVASCRIPT
+
 new Swiper('.wrapper', {
    
     loop: true,
@@ -32,3 +41,4 @@ new Swiper('.wrapper', {
 
     }
   });
+
