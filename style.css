@@ -16,13 +16,20 @@ body{
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: linear-gradient(#595f58, #909792, #075c1e);
+    background: linear-gradient(#595f58, #e4e4e4, #0e8b30);
 }
 
+.wrapper{
+    max-width: 1500px;
+    margin: 0 60px 35px;
+    padding: 20px 10px;
+    overflow: hidden;
+}
 .card-list .card-item{
     list-style: none;
 }
 .card-list .card-item .web-link{
+    user-select: none;
     width: 450px;
     display: block;   /* change block behaviour */
     background: #cadfd0;
@@ -32,6 +39,10 @@ body{
     text-decoration: none;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
     transition: 0.2s ease;
+}
+
+.card-list .card-item .web-link:active{
+    cursor: grabbing
 }
 
 .card-list .card-item .web-link:hover {   /* making the hover border effect */ 
@@ -57,6 +68,26 @@ body{
 
 }
 
+.link-desc.simulator{  /* Simulator websites : yellow color */
+    color: white;
+    background: #c79200;
+}
+
+.link-desc.go{    /* Go Bim website : blue color */
+    color: white;
+    background: #147d91;
+}
+ 
+.link-desc.tour{      /* Tour websites color: mustard color */
+    color: white;
+    background: #917d14;
+ }
+
+ .link-desc.geoanalysis{   /* Geoanalysis websites color: light green color */
+    color: white;
+    color: white;
+    background: #368f38;
+ }
 .title{
     font-size: 1.20rem;
     color: black;
@@ -65,4 +96,36 @@ body{
 
 button{
     margin: 25px 0 5px;
+}
+
+.wrapper .swiper-pagination-bullet{
+    height: 13px;
+    width: 13px;
+    opacity: 0.3;
+    background: #156129;
+}
+
+.wrapper .swiper-pagination-bullet-active{
+    height: 13px;
+    width: 13px;
+    opacity: 1;
+    background: #22aa46;
+}
+
+.wrapper .swiper-slide-btn{
+    color: #2b5c37;
+    margin-top: -25px;
+    margin-left: 20px;
+}
+
+/* Responsive Webiste */
+
+@media screen and (max-width: 770px) {
+    .wrapper{
+        margin: 0 10px 25px;
+    }
+
+    .wrapper .swiper-slide-btn{
+        display: none;
+    }
 }
